@@ -31,7 +31,7 @@
             <div class="currencies-row">
                 <div class="currency">
                     <div class="currency-image">
-                        <a href="/history/byCurrency/EUR">
+                        <a href="/history/EUR">
                             <img src="/images/eur.png" height="330" width="330">
                         </a>
                     </div>
@@ -51,7 +51,7 @@
                 <!-- CURENCY END -->
                     <div class="currency">
                         <div class="currency-image">
-                            <a href="/history/byCurrency/USD">
+                            <a href="/history/USD">
                                 <img src="/images/usd.png" height="330" width="330">
                             </a>
                         </div>
@@ -71,7 +71,7 @@
                 <!-- CURENCY END -->
                 <div class="currency">
                     <div class="currency-image">
-                        <a href="/history/byCurrency/RUR">
+                        <a href="/history/RUR">
                             <img src="/images/rub.png" height="330" width="330">
                         </a>
                     </div>

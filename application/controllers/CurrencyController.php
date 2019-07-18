@@ -1,5 +1,5 @@
 <?php
-class History extends CI_Controller
+class CurrencyController extends CI_Controller
 {
 
     public function byCurrency($code)
