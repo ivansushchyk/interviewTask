@@ -11,13 +11,13 @@ class History extends CI_Controller
 
          switch ($code) {
             case 'EUR':
-                $query = $this->Currencies_rate->getRatesByCode('EUR');
+                $query = $this->Currencies_rate->getRatesByCode($code);
                 break;
             case 'USD':
-                $query = $this->Currencies_rate->getRatesByCode('USD');
+                $query = $this->Currencies_rate->getRatesByCode($code);
                 break;
-            case 'RUB':
-                $query = $this->Currencies_rate->getRatesByCode('RUB');
+            case 'RUR':
+                $query = $this->Currencies_rate->getRatesByCode($code);
                 break;
             default:
                 header("HTTP/1.0 404 Not Found");

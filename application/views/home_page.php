@@ -42,8 +42,8 @@
 
 
                     <div class="currency-title">
-                        BUY <?= $eur['buy'] ?> /
-                        SELL <?= $eur['sell'] ?>
+                        BUY <?= $EUR[0] ?> /
+                        SELL <?= $EUR[1] ?>
                     </div>
 
 
@@ -62,8 +62,8 @@
 
 
                         <div class="currency-title">
-                            BUY <?= $usd['buy'] ?> /
-                            SELL <?= $usd['sell'] ?>
+                            BUY <?= $USD[0] ?> /
+                            SELL <?= $USD[1] ?>
                         </div>
 
 
@@ -71,7 +71,7 @@
                 <!-- CURENCY END -->
                 <div class="currency">
                     <div class="currency-image">
-                        <a href="/history/byCurrency/RUB">
+                        <a href="/history/byCurrency/RUR">
                             <img src="/images/rub.png" height="330" width="330">
                         </a>
                     </div>
@@ -81,8 +81,8 @@
                     </div>
 
                     <div class="currency-title">
-                        BUY <?= $rub['buy'] ?> /
-                        SELL <?= $rub['sell'] ?>
+                        BUY <?= $RUR[0] ?> /
+                        SELL <?= $RUR[1] ?>
                     </div>
 
 
