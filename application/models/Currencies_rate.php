@@ -9,13 +9,6 @@ class Currencies_rate extends CI_Model
     public $datetime;
     public $currency_id;
 
-//    public function __construct($id, $buy_rate, $sell_rate, $datetime)
-  //  {
-  //      $this->currency_id = $id;
-  //      $this->buy_rate = $buy_rate;
-  //      $this->sell_rate = $sell_rate;
-  //      $this->datetime = $datetime;
-  //  }
 
 
     public function getRatesByCode($code)
@@ -24,7 +17,7 @@ class Currencies_rate extends CI_Model
         $this->db->from('currencies_rates');
         $this->db->join('currencies', 'currencies.id = currencies_rates.currency_id');
         $this->db->where('currencies.code', $code);
-        $this->db->order_by('datetime','DESC');
+        $this->db->order_by('datetime', 'DESC');
         $query = $this->db->get();
         return $query;
     }

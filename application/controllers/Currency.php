@@ -1,4 +1,5 @@
 <?php
+
 class Currency extends CI_Controller
 {
 
@@ -9,7 +10,7 @@ class Currency extends CI_Controller
         $this->load->model('Currencies_rate');
 
 
-         switch ($code) {
+        switch ($code) {
             case 'EUR':
                 $query = $this->Currencies_rate->getRatesByCode($code);
                 break;
@@ -25,9 +26,9 @@ class Currency extends CI_Controller
         }
 
         $data['rates'] = $query->result();
-         $data['code'] = $code;
+        $data['code'] = $code;
 
-        $this->load->view('currency_rates_history',$data);
+        $this->load->view('currency_rates_history', $data);
     }
 
 

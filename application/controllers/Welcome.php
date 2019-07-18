@@ -27,7 +27,7 @@ class Welcome extends CI_Controller
         $diffMinutes = $interval->format('%i');
 
 
-        if($diffMinutes >=10){              // GET DATA FROM API
+        if ($diffMinutes >= 10) {              // GET DATA FROM API
             $json = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5';
             $rates = json_decode(file_get_contents($json)); // Array with actually rates USD EUR RUB BTN
             foreach ($rates as $rate) {
@@ -50,9 +50,6 @@ class Welcome extends CI_Controller
                 $this->db->insert('currencies_rates', $currencyRate);
             }
         }
-
-
-
 
 
         // GET ACTUALLY RATES => select buy_rate,sell_rate from currencies_rates order by datetime DESC, currency_id LIMIT 3
