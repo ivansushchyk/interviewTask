@@ -1,5 +1,5 @@
 <?php
-class CurrencyController extends CI_Controller
+class Currency extends CI_Controller
 {
 
     public function byCurrency($code)
@@ -25,6 +25,7 @@ class CurrencyController extends CI_Controller
         }
 
         $data['rates'] = $query->result();
+         $data['code'] = $code;
 
         $this->load->view('currency_rates_history',$data);
     }
